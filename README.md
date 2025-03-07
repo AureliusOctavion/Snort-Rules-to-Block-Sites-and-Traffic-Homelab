@@ -1,40 +1,40 @@
 ## **Snort Intrusion Detection & Custom Rules Homelab**
 
-## 📌 **Overview**
+## **Overview**
 This project demonstrates the setup and configuration of **Snort**, a powerful network intrusion detection system (NIDS) that analyzes packet traffic in real time. It covers the installation of Snort, writing custom rules, and detecting network attacks using the **pytbull-ng** testing framework.
 
-## 🎯 **Goals**
-By completing this project, you will:
+## **Goals**
+By completing this project, I will:
 - Deploy **Snort** to monitor network traffic.
 - Utilize **pytbull-ng** to simulate network attacks.
 - Write and configure **custom Snort rules** to detect and block malicious activity.
 
-## 🛠 **Tools & Resources**
+## **Tools & Resources**
 - [Snort](https://www.snort.org/) – Open-source NIDS
 - [pytbull-ng](https://github.com/efigo/pytbull-ng) – Testing framework for simulating attacks
   
-## 📝 **Project Breakdown**
-### **1️⃣ Installing Snort & Configuring the Environment**
+## **Project Breakdown**
+### **1️. Installing Snort & Configuring the Environment**
 - Updated system packages
 - Installed **Docker** and pulled `pytbull-ng` image
 - Verified installation using `docker images`
 
-### **2️⃣ Simulating Network Attacks**
+### **2️. Simulating Network Attacks**
 - Used `pytbull-ng` to generate network attack traffic
 - Monitored attack packets in real-time
 
-### **3️⃣ Writing Custom Snort Rules**
+### **3️. Writing Custom Snort Rules**
 - Created and configured Snort's rule directories
 - Wrote an **ICMP detection rule** for Snort validation
 - Implemented a **rule to detect HTTPS traffic to Google.com**
 - Tested rules by executing Snort in detection mode
 
-### **4️⃣ Blocking Network Traffic**
+### **4️. Blocking Network Traffic**
 - Modified `local.rules` to detect Google traffic
 - Configured `snort.lua` to enforce custom rules
 - Verified rule execution by observing Snort alerts
 
-## 🚀 **How to Run the Project**
+## **Running the project**
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/snort-nids.git
